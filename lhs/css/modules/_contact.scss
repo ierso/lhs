@@ -1,0 +1,69 @@
+//contact form//
+
+#contact{
+	width: 100%;
+	background-color: $light-gray;
+
+	.contact-us{
+	@include outer-container;
+	padding:40px 10px 50px 10px;	
+	}
+
+	.contact-wrapper{
+		margin-top: 10px;
+		@include span-columns(10);
+		@include shift(1);	
+	}
+
+	.field{
+		width: 26%;
+		margin-right: 18px;
+		float: left;
+	}
+
+
+	input[type="email"], input[type="text"], input[type="tel"],textarea, select {
+		height: 35px;
+		padding: 6px 10px;
+		background-color: #fff;
+		float: left;
+		border-radius: 0px;
+		border: $button-gray solid 1px;
+		box-shadow: none;
+		box-sizing: border-box;
+		width: 100%;
+
+	}
+
+
+	input[type="submit"] {	
+				font-size: em(16px);
+				text-transform: uppercase;
+		    	text-align: center;
+		    	padding: 10px 20px;
+		    	background-color: $button-gray;
+		    	color: $black;
+		    	
+		    	&:hover{
+		    		color: $prime-hover;
+		    		background-color: $button-gray;
+		    	}
+		  	}
+	
+}
+
+
+
+//contact mobile
+
+@media (max-width: $contact-break) {
+	#contact{
+		.field{
+			width: 100%;
+			margin-right: 18px;
+			float: left;
+		}
+	}
+
+}
+

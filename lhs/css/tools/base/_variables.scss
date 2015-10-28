@@ -1,0 +1,64 @@
+// Fonts
+$lato: 'Lato', sans-serif;
+$rale: 'Raleway', sans-serif;
+
+// Typography
+$base-font-family: $lato;
+$heading-font-family: $lato;
+$nav-font-family: $rale;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$nav-color: #292929;
+$white: #f8f8f8;
+$black: #353535;
+$dark-green: #006c68;
+$light-green: #66a7a4;
+$prime-hover: #baa159;
+$button-gray: #c2c2c2;
+$hr-color: #d3d3d3;
+$blue: #477dca;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #edf0f1;
+$text-gray: #656565;
+$list-gray: #565656;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $blue;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $hr-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+
+// Breakpoints
+$header-break: 960px;
+$nav-break: 647px;
+$contact-break: 883px;
+$mobile-break: 768px;

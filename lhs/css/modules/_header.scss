@@ -1,0 +1,65 @@
+//header desktop//
+
+
+header{
+	padding: 17px 10px 22px 10px;
+	@include outer-container;
+}
+
+.site-branding{
+	padding-left: 0px;
+	position: relative;
+	@include span-columns(4);
+
+	a{
+		color: $dark-green;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}
+
+.menu{
+	margin-top: 6px;
+	@include span-columns(8);
+}
+
+#logo{
+	float: left;
+	width: 85px;
+}
+
+#company{
+	position: absolute;
+    top: 40%;
+	left: 95px;
+	vertical-align: middle;
+
+	&:hover{
+			color: $prime-hover;
+		}
+}
+
+#mobile-nav{
+	margin-top: 25px;
+}
+
+//header mobile//
+
+@media (max-width: $header-break) {
+	.site-branding{
+	@include span-columns(12);
+	}
+
+	.menu{
+		@include span-columns(12);
+	}
+
+}
+
+@media (max-width: 385px) {
+	#company{
+		width: 100px;
+	    top: 25%;
+	}
+
+}

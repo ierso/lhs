@@ -1,0 +1,41 @@
+#jumbo-home{
+	height: 456px;
+}
+
+#jumbo-page{
+	height: 405px;
+}
+
+.jumbo{
+	width: 100%;
+	background-size: cover;
+	background-position: center
+}
+
+.jumbo-wrapper{
+	@include outer-container;
+
+	.jumbo-text{
+		text-align: center;
+		height: 456px;
+	}
+
+	h1{
+		margin-top: 140px;
+		color: $white;
+		display: inline-block;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.65);
+		padding: 25px 50px;
+	}
+}
+
+//jumbo mobile//
+
+@media (max-width: $mobile-break) {
+	.jumbo-wrapper{
+		h1{
+			padding: 25px 10px;
+		}
+	}
+}
