@@ -4,6 +4,10 @@
 
 //desktop//
 
+#masthead{
+	position: relative;
+}
+
 .menu-primary-container {
 	float: right;
 	ul{
@@ -31,9 +35,10 @@
 .sub-menu{
 	display: none;
 	max-height: 400px;
-	padding: 10px 20px;
+	padding: 10px 20px 10px 20px;
 	top: 110px;
 	position: absolute;
+	left: 0px;
 	overflow: hidden;
 	background-color: #eee;
 }
@@ -83,7 +88,6 @@
 	.sub-menu{
 		display: none;
 		max-height: initial;
-		padding: 0px 0px 0px 20px;
 		top: initial;
 		position: static;
 		overflow: visible;
@@ -101,6 +105,7 @@
 //hamburger//
 
 .hamburger{
+	display: none;
 	text-align: right;
 	background: none;
 	line-height: 45px;
@@ -114,8 +119,8 @@
 	z-index: 10000000000000;
 }
 
-
 .cross{
+	display: none;
 	text-align: right;
 	background: none;
 	padding: 0px 15px 0px 15px;
@@ -130,18 +135,47 @@
 }
 
 @media (min-width: $nav-break) {
-	.hamburger{
-		display: none;
+	#menu-primary{
+		border: red solid 1px;
 	}
-	.cross{
-		display: none;
-	}
+	
 }
 @media (max-width: $nav-break) {
-	#main-nav{
+	#menu-primary{
 		display: none;
+	}
+
+	.sub-menu{
+		display: none;
+	}
+
+	.hamburger{
+		display: block;
 	}
 }
 
 
+
+//mega menu//
+
+#nav-test-1a, #nav-test-1d, #nav-sample-page{	
+	width: 25%;
+	float: left;
+}
+
+.sub-menu .sub-menu{
+	padding: 0px 10px 0px 10px;
+    display: block;
+ 	width: 100%;
+    background: pink;
+    position: relative;
+    top: 0px;
+}
+
+@media (max-width: $nav-break) {
+	#nav-test-1a, #nav-test-1d, #nav-sample-page{	
+		width: 100%;
+		float: left;
+	}
+}
 

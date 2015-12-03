@@ -64,6 +64,10 @@ function lhs_setup() {
 		return 'nav-'.strtolower( str_replace( ' ','-',$item->title ) );
 	}
 	add_filter( 'nav_menu_item_id', 'nav_id_filter', 10, 2 );
+	
+	
+
+
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -197,3 +201,6 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+

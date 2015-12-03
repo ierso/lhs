@@ -7,22 +7,11 @@
 
 get_header(); ?>
 
-<?php
 
-	$jumbo = get_field( 'jumbo_image' );
-
-	$vegOils = get_field( 'veg_oils_image' );
-	$fattyAcids = get_field( 'fatty_acids_image' );
-	$Selection = get_field( 'outstanding_selection_image' );
-
-
-?>
-
-
-<div id="jumbo-home" class="jumbo" style="background-image: url(<?=$jumbo?>); ">
+<div id="jumbo-home" class="jumbo" style="background-image: url(); ">
 	<div class="jumbo-wrapper">
 		<div class="jumbo-text">
-			<h1><?php the_field('jumbo_text'); ?></h1>	
+			<h1></h1>	
 		</div>
 	</div>
 </div>
@@ -40,7 +29,7 @@ get_header(); ?>
 <section id="home-products">
 	<div class="product">
 		<a href="#">
-			<img src="<?php echo $vegOils['url']; ?>" alt="Vegetable Oils">
+			<img src="" alt="Vegetable Oils">
 		</a>
 		<a href="#">
 			<h3>Vegetable Oils</h3>
@@ -49,7 +38,7 @@ get_header(); ?>
 	</div>
 	<div class="product">
 		<a href="#">
-			<img src="<?php echo $fattyAcids['url']; ?>" alt="Fatty Acids">
+			<img src="" alt="Fatty Acids">
 		</a>
 		<a href="#">
 			<h3>Fatty Acids / Fatty Acid Esters</h3>
@@ -58,7 +47,7 @@ get_header(); ?>
 	</div>
 	<div class="product">
 		<a href="#">
-			<img src="<?php echo $Selection['url']; ?>" alt="Vegetable Oils">
+			<img src="" alt="Vegetable Oils">
 
 		<a href="#">
 			<h3>Outstanding Selection</h3>
